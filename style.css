@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9; 
+}
+
+header {
+    background: linear-gradient(135deg, #2c5f2d, #a68d60); 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+}
+
+nav ul li a:hover {
+    color: #f4a261; /* لون برتقالي راقٍ */
+}
+
+.hero-section {
+    background-image: url('https://via.placeholder.com/1920x800'); /* يمكنك تغيير الرابط لصورة خلفية حقيقية */
+    background-size: cover;
+    background-position: center;
+    color:#2c5f2d;
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 35px; /* زيادة حجم الخط */
+}
+
+.hero-section h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #f4a261, #e76f51); /* لون ذهبي مائل للبرتقالي */
+    color:#2c5f2d;
+    padding: 15px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #e76f51, #d35400);
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.service-box {
+    background-color: #f4e1d2; /* لون بيج فاتح لخلق إحساس بالراحة */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #2c3e50;
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    background-color: #d8c3a5; /* لون بيج أغمق عند التحويم */
+}
+
+.service-box h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2c5f2d; /* لون أخضر غامق */
+}
+
+.service-box p {
+    font-size: 26px;
+    color: #4a4a4a;
+}
+
+.service-image {
+    display: block; /* جعل الصور مرئية */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service-image img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+footer {
+    background: linear-gradient(135deg, #2c5f2d, #a68d60);
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e76f51;
+}
+
+/* تحسين العرض على الأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr; /* عرض عمودي بدل من أفقي */
+    }
+
+    .hero-section {
+        font-size: 25px; /* تقليل حجم الخط في الشاشة الصغيرة */
+    }
+
+    .cta-button {
+        font-size: 24px; /* تقليل حجم الخط في الشاشة الصغيرة */
+    }
+}
