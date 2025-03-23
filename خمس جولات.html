@@ -6,90 +6,127 @@
     <meta name="description" content="منتجع هول ان ون يقدم أفضل عروض الجولف والإقامات الفاخرة. استمتع بتجربة استثنائية في حزمة خمس جولات.">
     <title>حزمة الخمس مستويات</title>
     <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="Unconfirmed 664776.js" defer></script>
     <style>
        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* الخلفية البيضاء */
-    direction: rtl;
-    color: #333; /* نص داكن ليتناسب مع الخلفية البيضاء */
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* الخلفية البيضاء */
+            direction: rtl;
+            color: #333; /* نص داكن ليتناسب مع الخلفية البيضاء */
+        }
 
-header {
-    background-color: #454e2b; /* اللون الأخضر الجديد */
-    color: #ffffff; /* النص باللون الأبيض */
-    padding: 20px 0;
-    text-align: center;
-}
+        header {
+            background-color: #454e2b; /* اللون الأخضر الجديد */
+            color: #ffffff; /* النص باللون الأبيض */
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: bold;
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    margin-top: 10px;
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-nav ul li a {
-    color: #ffffff; /* النص باللون الأبيض */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-}
+        nav ul li a {
+            color: #ffffff; /* النص باللون الأبيض */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
 
-.package-section {
-    padding: 30px;
-    background-color: #ffffff; /* خلفية بيضاء */
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
+        nav ul li a:hover {
+            color: #81c784; /* أخضر فاتح عند التحويم */
+        }
 
-.package-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #4d5534; /* الأخضر الجديد */
-    font-size: 2em;
-}
+        .package-section {
+            padding: 30px;
+            background-color: #ffffff; /* خلفية بيضاء */
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 100px; /* للتأكد من أن المحتوى لا يغطيه العنوان الثابت */
+        }
 
-.package-details {
-    margin-bottom: 25px;
-    padding: 20px;
-    background-color: #f5e4f1; /* لون فاتح */
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
+        .package-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4d5534; /* الأخضر الجديد */
+            font-size: 2em;
+        }
 
-.package-details h3 {
-    background-color: #4d5534; /* الأخضر الجديد */
-    color: #ffffff; /* النص باللون الأبيض */
-    padding: 15px;
-    margin: 0;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 1.5em;
-}
+        .package-details {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f5e4f1; /* لون فاتح */
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-.package-details p {
-    padding: 10px;
-    font-size: 1.1em;
-    background-color: #ffffff; /* خلفية بيضاء للنص */
-    border-radius: 8px;
-    line-height: 1.8;
-    color: #333; 
-}
+        .package-details h3 {
+            background-color: #4d5534; /* الأخضر الجديد */
+            color: #ffffff; /* النص باللون الأبيض */
+            padding: 15px;
+            margin: 0;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .package-details p {
+            padding: 10px;
+            font-size: 1.1em;
+            background-color: #ffffff; /* خلفية بيضاء للنص */
+            border-radius: 8px;
+            line-height: 1.8;
+            color: #333; 
+        }
+
+        .cta-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta-button a {
+            display: inline-block;
+            background-color: #454e2b; /* أخضر داكن */
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .cta-button a:hover {
+            background-color: #66bb6a; /* أخضر فاتح عند التحويم */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #454e2b; /* أخضر داكن */
+            color: #ffffff;
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
@@ -98,11 +135,10 @@ nav ul li a {
         <h1>منتجع هول ان ون</h1>
         <nav>
             <ul>
-                
-                <li><a href="index.html">الصفحةالرئيسية</a></li>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
                 <li><a href="خمس جولات.html">خمس جولات</a></li>
                 <li><a href="الجولة الثلاثية.html">الجولة الثلاثية</a></li>
-                <li><a href="html محسن استراحة استحمام.html">استراحة استجمام</a></li>
+                <li><a href="استراحة استحمام.html">استراحة استجمام</a></li>
                 <li><a href="الحزمة المخصصة.html">الحزمة المخصصة </a></li>
                 <li><a href="https://web.whatsapp.com/">استفسار/حجز</a></li>
                 <li><a href="الاسئلة المتكررة.html">الأسئلة المتكررة</a></li>
@@ -150,9 +186,10 @@ nav ul li a {
         </div>
 
         <div class="cta-button">
-            <a style="color: rgb(255, 255, 255);" href="https://web.whatsapp.com/">احجز طلبك الآن</a>
+            <a href="https://web.whatsapp.com/">احجز طلبك الآن</a>
         </div>
     </section>
+
     <footer>
         <p>اهلا وسهلا بكم في منتجعنا</p>
     </footer>
