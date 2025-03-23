@@ -22,51 +22,26 @@
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .image-gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         /* تنسيق زر التسجيل */
         .register-button {
             display: block;
             margin: 30px auto;
-            padding: 15px;
-            background-color: #2a492d; /* اللون الأخضر الداكن */
+            padding: 15px 30px;
+            background-color: #4CAF50;
             color: white;
             font-size: 18px;
             text-align: center;
             border: none;
-            border-radius: 5px; /* إضافة التدوير */
+            border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
             width: 200px;
-            transition: background-color 0.3s ease;
         }
 
         .register-button:hover {
-            background-color: #388E3C; /* اللون الأخضر الفاتح عند التمرير */
-        }
-
-        /* تنسيق رابط استفسار/حجز */
-        .inquiry-link {
-            display: block;
-            margin-top: 30px;
-            text-align: center;
-            padding: 15px;
-            background-color: #2a492d; /* اللون الأخضر الداكن */
-            color: white;
-            font-size: 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .inquiry-link:hover {
-            background-color: #388E3C; /* اللون الأخضر الفاتح عند التمرير */
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -76,16 +51,15 @@
         <h1>منتجع هول ان ون</h1>
         <nav>
             <ul>
-                <li><a href="index.html">الصفحة الرئيسية</a></li>
                 <li><a href="خمس جولات.html">خمس جولات</a></li>
                 <li><a href="الجولة الثلاثية.html">الجولة الثلاثية</a></li>
                 <li><a href="استراحة استحمام.html">استراحة استجمام</a></li>
-                <li><a href="الحزمة المخصصة.html">الحزمة المخصصة</a></li>
+                <li><a href="الحزمة المخصصة.html">الحزمة المخصصة </a></li>
                 <li><a href="https://web.whatsapp.com/">استفسار/حجز</a></li>
                 <li><a href="الاسئلة المتكررة.html">الأسئلة المتكررة</a></li>
                 <li><a href="معرض الصور.html">معرض الصور</a></li>
-                <!-- تغيير ترتيب رابط "gym" ليكون آخر رابط في القائمة -->
-                <li><a href="gym.html" id="gym-link">gym</a></li>
+                <li><a href="gym.html">gym</a></li>
+
             </ul>
         </nav>
     </header>
@@ -97,15 +71,7 @@
     </div>
 
     <!-- زر التسجيل للجيم -->
-    <a href="https://web.whatsapp.com/" class="register-button">استفسار/حجز</a>
-
-    <script>
-        // إضافة معالج الحدث لمنع الرابط من التنقل
-        document.getElementById("gym-link").addEventListener("click", function(event) {
-            event.preventDefault();  // منع التنقل إلى صفحة جديدة
-            alert("لقد تم النقر على رابط الجيم ولكن لم يحدث انتقال!");
-        });
-    </script>
+    <a style="color: rgb(255, 255, 255);" href="https://web.whatsapp.com/">استفسار/حجز</a>
 
 </body>
 </html>

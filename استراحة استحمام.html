@@ -8,121 +8,127 @@
     <script src="Unconfirmed 664776.js" defer></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            direction: rtl;
-            color: #000;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* خلفية بيضاء */
+    direction: rtl;
+    color: #000; /* تغيير اللون إلى الأسود للخطوط على الخلفية البيضاء */
+}
 
-        header {
-            background-color: #454E2B; /* اللون الأخضر الداكن */
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
+header {
+    background-color: #2a492d; /* أخضر داكن */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            font-weight: bold;
-        }
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-            margin-top: 10px;
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
-        .package-section {
-            padding: 30px;
-            background-color: rgba(255, 255, 255, 0.95);
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
+.package-section {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95); /* خلفية بيضاء مع شفافية */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .package-section h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #454E2B; /* اللون الأخضر الداكن */
-            font-size: 2em;
-        }
+.package-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #454e2b; /* أخضر فاتح */
+    font-size: 2em;
+}
 
-        .package-details {
-            margin-bottom: 25px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
+.package-details {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f4f4f4; 
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        .package-details h3 {
-            background-color: #454E2B; /* اللون الأخضر الداكن */
-            color: #ffffff;
-            padding: 15px;
-            margin: 0;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 1.5em;
-            position: sticky;
-            top: 0; /* ثابت عند التمرير */
-            z-index: 10;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+.package-details h3 {
+    background-color: #454e2b; /* أخضر داكن */
+    color: #ffffff; 
+    padding: 15px;
+    margin: 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5em;
+}
 
-        .package-details p, .package-details ul {
-            padding: 10px;
-            font-size: 1.1em;
-            background-color: #ffffff;
-            border-radius: 8px;
-            line-height: 1.8;
-            color: #333;
-        }
+.package-details p {
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    line-height: 1.8;
+    color: #333;
+}
 
-        .package-details ul li {
-            margin-bottom: 10px;
-        }
+.package-details ul {
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    line-height: 1.8;
+    color: #333;
+}
 
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background-color: #454E2B; /* اللون الأخضر الداكن */
-            color: #ffffff;
-            font-size: 1.1em;
-        }
+.package-details ul li {
+    margin-bottom: 10px;
+}
 
-        .cta-button {
-            display: inline-block;
-            background-color: #454E2B; /* اللون الأخضر الداكن */
-            color: #ffffff;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.2em;
-            text-align: center;
-            margin-top: 20px;
-        }
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #ffffff; /* خلفية بيضاء */
+    color: #333; /* تغيير اللون إلى الأسود ليتناسب مع الخلفية البيضاء */
+    font-size: 1.1em;
+}
 
-        .cta-button:hover {
-            background-color: #2f3e1f; /* لون أخضر أغمق عند التمرير */
-        }
+.cta-button {
+    display: inline-block;
+    background-color: #66BB6A; /* أخضر فاتح */
+    color: #ffffff; 
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #388E3C; /* أخضر داكن */
+}
+
     </style>
+    
 </head>
 <body>
 
@@ -130,11 +136,11 @@
         <h1>منتجع هول ان ون</h1>
         <nav>
             <ul>
-                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="index.html">الصفحةالرئيسية</a></li>
                 <li><a href="خمس جولات.html">خمس جولات</a></li>
                 <li><a href="الجولة الثلاثية.html">الجولة الثلاثية</a></li>
                 <li><a href="استراحة استحمام.html">استراحة استجمام</a></li>
-                <li><a href="الحزمة المخصصة.html">الحزمة المخصصة</a></li>
+                <li><a href="الحزمة المخصصة.html">الحزمة المخصصة </a></li>
                 <li><a href="https://web.whatsapp.com/">استفسار/حجز</a></li>
                 <li><a href="الاسئلة المتكررة.html">الأسئلة المتكررة</a></li>
                 <li><a href="معرض الصور.html">معرض الصور</a></li>
