@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ar">
-<head>
+    <head></head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جيم منتجع هول ان ون</title>
+    <title>منتجع هول ان ون</title>
     <link href="style.css" rel="stylesheet">
-    <script src="Unconfirmed 664776.js" defer></script>
+    <script src="script.js" defer></script>
     <style>
         /* تنسيق الصور في المعرض */
         .image-gallery {
@@ -75,3 +75,180 @@
 
 </body>
 </html>
+<style>
+    body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #ffffff; /* خلفية بيضاء */
+ direction: rtl;
+ color: #000; /* تغيير اللون إلى الأسود للخطوط على الخلفية البيضاء */
+}
+
+header {
+ background-color: #2a492d; /* أخضر داكن */
+ color: #ffffff;
+ padding: 20px 0;
+ text-align: center;
+}
+
+header h1 {
+ margin: 0;
+ font-size: 2.5em;
+ font-weight: bold;
+}
+
+nav ul {
+ list-style-type: none;
+ padding: 0;
+ text-align: center;
+ margin-top: 10px;
+}
+
+nav ul li {
+ display: inline;
+ margin-right: 20px;
+}
+
+nav ul li a {
+ color: #ffffff; 
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 1.2em;
+}
+
+.package-section {
+ padding: 30px;
+ background-color: rgba(255, 255, 255, 0.95); /* خلفية بيضاء مع شفافية */
+ margin: 20px;
+ border-radius: 8px;
+ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.package-section h2 {
+ text-align: center;
+ margin-bottom: 20px;
+ color: #454e2b; /* أخضر فاتح */
+ font-size: 2em;
+}
+
+.package-details {
+ margin-bottom: 25px;
+ padding: 20px;
+ background-color: #f4f4f4; 
+ border-radius: 8px;
+ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.package-details h3 {
+ background-color: #454e2b; /* أخضر داكن */
+ color: #ffffff; 
+ padding: 15px;
+ margin: 0;
+ border-radius: 8px;
+ text-align: center;
+ font-size: 1.5em;
+}
+
+.package-details p {
+ padding: 10px;
+ font-size: 1.1em;
+ background-color: #ffffff; 
+ border-radius: 8px;
+ line-height: 1.8;
+ color: #333;
+}
+
+.package-details ul {
+ padding: 10px;
+ font-size: 1.1em;
+ background-color: #ffffff; 
+ border-radius: 8px;
+ line-height: 1.8;
+ color: #333;
+}
+
+.package-details ul li {
+ margin-bottom: 10px;
+}
+
+footer {
+ text-align: center;
+ padding: 15px 0;
+ background-color: #ffffff; /* خلفية بيضاء */
+ color: #333; /* تغيير اللون إلى الأسود ليتناسب مع الخلفية البيضاء */
+ font-size: 1.1em;
+}
+
+.cta-button {
+ display: inline-block;
+ background-color: #66BB6A; /* أخضر فاتح */
+ color: #ffffff; 
+ padding: 15px 30px;
+ border-radius: 5px;
+ text-decoration: none;
+ font-size: 1.2em;
+ text-align: center;
+ margin-top: 20px;
+}
+
+.cta-button:hover {
+ background-color: #388E3C; /* أخضر داكن */
+}
+
+ </style>
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تكبير وتصغير الصفحة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="buttons">
+        <button onclick="zoomIn()"> تكبير</button>
+        <button onclick="zoomOut()"> تصغير</button>
+        <button onclick="resetZoom()"> إعادة ضبط</button>
+    </div>
+
+    <script>
+        let scale = 1;
+
+        function zoomIn() {
+            scale += 0.1;
+            document.body.style.transform = `scale(${scale})`;
+        }
+
+        function zoomOut() {
+            if (scale > 0.5) {
+                scale -= 0.1;
+                document.body.style.transform = `scale(${scale})`;
+            }
+        }
+
+        function resetZoom() {
+            scale = 1;
+            document.body.style.transform = `scale(${scale})`;
+        }
+    </script>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حزمة استراحة استجمام</title>
     <link href="style.css" rel="stylesheet">
-    <script src="Unconfirmed 664776.js" defer></script>
+    <script src="script.js" defer></script>
     <style>
         body {
     font-family: Arial, sans-serif;
@@ -188,9 +188,58 @@ footer {
         </div>
     </section>
 
-    <footer>
-        <p>اهلا وسهلا بكم في منتجعنا</p>
-    </footer>
-
-</body>
+  
 </html>
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تكبير وتصغير الصفحة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="buttons">
+        <button onclick="zoomIn()"> تكبير</button>
+        <button onclick="zoomOut()"> تصغير</button>
+        <button onclick="resetZoom()"> إعادة ضبط</button>
+    </div>
+
+    <script>
+        let scale = 1;
+
+        function zoomIn() {
+            scale += 0.1;
+            document.body.style.transform = `scale(${scale})`;
+        }
+
+        function zoomOut() {
+            if (scale > 0.5) {
+                scale -= 0.1;
+                document.body.style.transform = `scale(${scale})`;
+            }
+        }
+
+        function resetZoom() {
+            scale = 1;
+            document.body.style.transform = `scale(${scale})`;
+        }
+    </script>
